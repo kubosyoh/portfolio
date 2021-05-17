@@ -1,0 +1,33 @@
+@import '/Users/shoh25/web_project/kubo_portfolio/scss/setting/_setting.scss';
+@import '/Users/shoh25/web_project/kubo_portfolio/scss/mixin/_mixin.scss';
+
+#header {
+	background-color: white;
+	height: 100px;
+	padding-top: 40px;
+	@include responsive(sp) {
+		height: 78px;
+		padding-top: 33px;
+	}
+}
+.header__main {
+	text-align: center;
+	a {
+		display: inline-block; 
+		position: relative;
+		@include inter;
+		@include line-border;	
+		font-size: 17px;
+		font-weight: 600;
+		margin: 0px 20px;
+	}
+
+	@include responsive(sp) {
+		padding: 0 20px;
+		text-align: right;
+		a {
+			font-size: 14px;
+			margin: 0 0 0 23px;
+		}
+	}
+}

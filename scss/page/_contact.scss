@@ -1,0 +1,72 @@
+@import "/Users/shoh25/web_project/kubo_portfolio/scss/setting/_setting.scss";
+@import "/Users/shoh25/web_project/kubo_portfolio/scss/mixin/_mixin.scss";
+
+.contact {
+	margin-top: 147px;
+	text-align: center;
+	p {
+		margin-top: 16px;
+		@include notosans;
+		font-size: 1.4rem;
+		font-weight: 400;
+		opacity: 0;
+		@include keyframes(slidein-contact) {
+			0% {
+				clip-path: inset(0 100% 0 0);
+			}
+			100% {
+				opacity: 1;
+				clip-path: inset(0);
+			}
+		}
+		@include animation(slidein-contact 2.5s cubic-bezier(0.01, 0.25, 0, 1) .1s forwards);
+	}
+	&__icons {
+		margin-top: 74px;
+		img {
+			width: 50px;
+			margin: 0 10px;
+			opacity: 0;
+			transition: transform 0.2s;
+			&:hover {
+				transform: scale(1.15);
+			}
+			@include keyframes(icons) {
+				0% {
+					opacity: 0;
+					transform: translateY(20px);
+				}
+				100% {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+			@include animation(icons 1s cubic-bezier(0.68, -0.55, 0.15, 1.03) forwards);
+		}
+		.icon-1 {
+			animation-delay: 0.1s;
+		}
+		.icon-2 {
+			animation-delay: 0.3s;
+		}
+		.icon-3 {
+			animation-delay: 0.5s;
+		}
+	}
+
+	@include responsive(sp) {
+		margin-top: 68px;
+		p {
+			margin-top: 10px;
+			font-size: 1rem;
+			color: $textcolor;
+		}
+		&__icons {
+			margin-top: 65px;
+			img {
+				width: 40px;
+				margin: 0 6px;
+			}
+		}
+	}
+}

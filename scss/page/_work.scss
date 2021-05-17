@@ -1,0 +1,62 @@
+@import "/Users/shoh25/web_project/kubo_portfolio/scss/setting/_setting.scss";
+@import "/Users/shoh25/web_project/kubo_portfolio/scss/mixin/_mixin.scss";
+
+.works {
+	margin-top: 154px;
+	&__inner {
+		margin-top: 78px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__card {
+		width: 343px;
+		overflow: hidden;
+		opacity: 0;
+		@include keyframes(card) {
+			0% {
+				opacity: 0;
+				transform: translateY(40px);
+			}
+			100% {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+		@include animation (card .7s cubic-bezier(0.68,-0.55,0.15,1.03) forwards);
+		img {
+			width: 100%;
+			@include work-card;
+		}
+		p {
+			@include notosans;
+			font-weight: 400;
+			font-size: 1.2rem;
+			margin-top: 10px;
+		}
+	}
+	.card-1 {
+		animation-delay: .1s;
+	}
+	.card-2 {
+		animation-delay: .25s;
+	}
+	.card-3 {
+		animation-delay: .4s;
+	}
+
+	@include responsive(sp) {
+		margin-top: 68px;
+		&__inner {
+			margin-top: 35px;
+			display: block;
+		}
+		&__card {
+			width: 100%;
+			box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.2);
+			margin-bottom: 74px;
+			p {
+				display: none;
+			}
+		}
+	}
+}

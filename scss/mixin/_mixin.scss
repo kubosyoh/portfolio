@@ -1,0 +1,90 @@
+@import "/Users/shoh25/web_project/kubo_portfolio/scss/setting/_setting.scss";
+
+@mixin responsive($breakpoint) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+
+@mixin inter($color: black, $font-family: "Inter", $font-weight: 700) {
+	color: $color;
+	font-family: $font-family;
+	font-weight: $font-weight;
+}
+
+@mixin notosans($font-family: "Noto Sans JP", $font-weight: 500) {
+	font-family: $font-family;
+	font-weight: $font-weight;
+}
+
+@mixin btn() {
+	display: block;
+	width: 227px;
+	margin: 0 auto;
+	background-color: black;
+	border: black 1px solid;
+	padding: 19px 18px;
+	color: white;
+	position: relative;
+	border-radius: 5px;
+	transition: 0.3s;
+	&:hover {
+		color: black;
+		background-color: white;
+	}
+}
+
+@mixin tag() {
+	@include notosans;
+	font-size: 11px;
+	letter-spacing: $baseletterspace;
+	display: block;
+	padding: 9px 17px;
+	border-radius: 100vh;
+	color: white;
+	background-color: #959595;
+
+	@include responsive(sp) {
+		transform-origin: 0 0;
+		transform: scale(0.7);
+	}
+}
+
+@mixin line-border() {
+	transition: 0.4s;
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0px;
+		bottom: -8px;
+		width: 0%;
+		height: 2px;
+		background-color: black;
+		transition: 0.3s;
+		transition-timing-function: ease-in-out;
+	}
+	&:hover::after {
+		width: 100%;
+	}
+	&:hover {
+		color: $textcolor;
+	}
+}
+
+@mixin work-card() {
+	transition: .4s;
+	&:hover {
+		transform: scale(1.07);
+	}
+}
+
+// animation
+@mixin keyframes($animation-name) {
+	@keyframes #{$animation-name} {
+		@content;
+	}
+}
+
+@mixin animation($animation-name) {
+	animation: $animation-name;
+}
