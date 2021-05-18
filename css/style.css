@@ -245,8 +245,8 @@ a, p {
   background-color: white;
   height: 246px;
   width: 60vw;
-  -webkit-animation: slidein-back 1s cubic-bezier(0.01, 0.25, 0, 1) forwards;
-          animation: slidein-back 1s cubic-bezier(0.01, 0.25, 0, 1) forwards;
+  -webkit-animation: slidein-back 1s cubic-bezier(0.01, 0.25, 0, 1) forwards 0.3s;
+          animation: slidein-back 1s cubic-bezier(0.01, 0.25, 0, 1) forwards 0.3s;
 }
 
 @-webkit-keyframes slidein-back {
@@ -284,8 +284,8 @@ a, p {
 .top-view__main .view-word {
   padding-top: 6px;
   opacity: 0;
-  -webkit-animation: slidein 0.5s cubic-bezier(0.01, 0.25, 0, 1) 0.5s forwards;
-          animation: slidein 0.5s cubic-bezier(0.01, 0.25, 0, 1) 0.5s forwards;
+  -webkit-animation: slidein 0.5s cubic-bezier(0.01, 0.25, 0, 1) 0.6s forwards;
+          animation: slidein 0.5s cubic-bezier(0.01, 0.25, 0, 1) 0.6s forwards;
 }
 
 @-webkit-keyframes slidein {
@@ -381,8 +381,8 @@ a, p {
       -ms-flex-pack: justify;
           justify-content: space-between;
   opacity: 0;
-  -webkit-animation: slidein-name 0.5s cubic-bezier(0.01, 0.25, 0, 1) 0.63s forwards;
-          animation: slidein-name 0.5s cubic-bezier(0.01, 0.25, 0, 1) 0.63s forwards;
+  -webkit-animation: slidein-name 0.5s cubic-bezier(0.01, 0.25, 0, 1) 0.73s forwards;
+          animation: slidein-name 0.5s cubic-bezier(0.01, 0.25, 0, 1) 0.73s forwards;
 }
 
 @-webkit-keyframes slidein-name {
@@ -472,11 +472,11 @@ a, p {
   font-family: "Noto Sans JP";
   font-weight: 500;
   font-size: 1.4rem;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.01em;
   line-height: 2.1;
   opacity: 0;
-  -webkit-animation: slidein-content 0.4s cubic-bezier(0.01, 0.25, 0, 1) 0.7s forwards;
-          animation: slidein-content 0.4s cubic-bezier(0.01, 0.25, 0, 1) 0.7s forwards;
+  -webkit-animation: slidein-content 0.4s cubic-bezier(0.01, 0.25, 0, 1) 0.8s forwards;
+          animation: slidein-content 0.4s cubic-bezier(0.01, 0.25, 0, 1) 0.8s forwards;
 }
 
 @-webkit-keyframes slidein-content {
@@ -1004,7 +1004,7 @@ a, p {
   font-family: "Noto Sans JP";
   font-weight: 500;
   font-size: 1.4rem;
-  letter-spacing: -0.045em;
+  letter-spacing: -0.01em;
   line-height: 2.1;
   -webkit-animation: slidein-content 0.5s cubic-bezier(0.01, 0.25, 0, 1) 0.5s forwards;
           animation: slidein-content 0.5s cubic-bezier(0.01, 0.25, 0, 1) 0.5s forwards;

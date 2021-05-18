@@ -63,7 +63,7 @@
 			opacity: 0;
 			@include notosans;
 			font-size: 1.4rem;
-			letter-spacing: $baseletterspace;
+			letter-spacing: -0.01em;
 			line-height: 2.1;
 			@include keyframes(slidein-content) {
 				0% {

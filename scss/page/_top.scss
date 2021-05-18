@@ -20,7 +20,7 @@
 					width: 60vw;
 				}
 			}
-			@include animation(slidein-back 1s cubic-bezier(0.01,0.25,0,1) forwards);
+			@include animation(slidein-back 1s cubic-bezier(0.01,0.25,0,1) forwards .3s);
 
 		@include responsive(sp) {
 			top: 276px;
@@ -43,7 +43,7 @@
 					transform: translateX(0px)
 				}
 			}
-			@include animation(slidein .5s cubic-bezier(0.01,0.25,0,1) .5s forwards);
+			@include animation(slidein .5s cubic-bezier(0.01,0.25,0,1) .6s forwards);
 		}
 		.profile-picture {
 			position: absolute;
@@ -97,7 +97,7 @@
 					transform: translateX(0px)
 				}
 			}
-			@include animation(slidein-name .5s cubic-bezier(0.01,0.25,0,1)  .63s forwards);
+			@include animation(slidein-name .5s cubic-bezier(0.01,0.25,0,1)  .73s forwards);
 		.name {
 			display: flex;
 			align-items: center;
@@ -147,7 +147,7 @@
 		margin-top: 20px;
 		@include notosans;
 		font-size: 1.4rem;
-		letter-spacing: -0.045em;
+		letter-spacing: -0.01em;
 		line-height: 2.1;
 		opacity: 0;
 		@include keyframes(slidein-content) {
@@ -159,7 +159,7 @@
 					clip-path: inset(0)
 				}
 			}
-			@include animation(slidein-content .4s cubic-bezier(0.01,0.25,0,1) .7s forwards);
+			@include animation(slidein-content .4s cubic-bezier(0.01,0.25,0,1) .8s forwards);
 
 		@include responsive(sp) {
 			font-size: 1.2rem;
