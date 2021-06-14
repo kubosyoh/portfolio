@@ -1,5 +1,3 @@
-@import '/Users/shoh25/web_project/kubo_portfolio/scss/setting/_setting.scss';
-@import '/Users/shoh25/web_project/kubo_portfolio/scss/mixin/_mixin.scss';
 
 html {
 font-size: 62.5%;
@@ -22,10 +20,11 @@ body {
 main {
 	max-width: 1200px;
 	margin: 0 auto;
-	padding-bottom: 168px;
+	padding-top: 100px;
+	padding-bottom: 240px;
 
 	@include responsive(sp) {
-		padding: 0 20px 120px 20px;
+		padding: 78px 20px 120px 20px;
 		width: 100%;
 	}
 }

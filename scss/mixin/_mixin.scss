@@ -1,4 +1,4 @@
-@import "/Users/shoh25/web_project/kubo_portfolio/scss/setting/_setting.scss";
+
 
 @mixin responsive($breakpoint) {
 	@media #{map-get($breakpoints, $breakpoint)} {
@@ -45,8 +45,8 @@
 	background-color: #959595;
 
 	@include responsive(sp) {
-		transform-origin: 0 0;
-		transform: scale(0.7);
+		padding: 7px 14px;
+		font-size: 0.9rem;
 	}
 }
 

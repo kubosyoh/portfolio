@@ -1,5 +1,4 @@
-@import "/Users/shoh25/web_project/kubo_portfolio/scss/setting/_setting.scss";
-@import "/Users/shoh25/web_project/kubo_portfolio/scss/mixin/_mixin.scss";
+
 .workpage {
 	padding: 0;
 	@include responsive(sp) {
@@ -7,7 +6,7 @@
 	}
 }
 .intro {
-	margin-top: 154px;
+	padding-top: 254px;
 	&__inner {
 		display: flex;
 		justify-content: space-between;
@@ -41,10 +40,11 @@
 			display: flex;
 		}
 		.tag {
-			margin-top: 8px;
+			margin-top: 12px;
 			margin-right: 12px;
 			opacity: 0;
 			@include tag;
+
 			@include keyframes(slidein-name) {
 				0% {
 					transform: translateX(-25px);
@@ -95,14 +95,14 @@
 	}
 	
 	@include responsive(sp) {
-		margin-top: 38px;
+		padding-top: 150px;
 		&__inner {
 			display: block;
 			position: relative;
 		}
 		&__contents {
 			h5 {
-				font-size: 2.1rem;
+				font-size: 2.4rem;
 				&::before {
 					font-size: 1.4rem;
 				}
@@ -111,7 +111,7 @@
 				margin-top: 7px;
 			}
 			p {
-				margin-top: 0px;
+				margin-top: 10px;
 				font-size: 1.2rem;
 				width: 100%;
 			}
@@ -162,7 +162,7 @@
 		}
 	}
 	.btn {
-		margin-top: 90px;
+		margin-top: 140px;
 		padding-bottom: 168px;
 		text-align: center;
 		a {

@@ -1,5 +1,4 @@
-@import "/Users/shoh25/web_project/kubo_portfolio/scss/setting/_setting.scss";
-@import "/Users/shoh25/web_project/kubo_portfolio/scss/mixin/_mixin.scss";
+
 
 .works {
 	margin-top: 154px;
@@ -10,8 +9,12 @@
 	}
 	&__card {
 		width: 343px;
+		height: auto;
+
 		overflow: hidden;
 		opacity: 0;
+		
+		
 		@include keyframes(card) {
 			0% {
 				opacity: 0;
