@@ -5,7 +5,7 @@ $(function () {
 
 
 $(window).on('scroll', function () {
-	if (100 < jQuery(this).scrollTop()) {
+	if (70 < jQuery(this).scrollTop()) {
 		jQuery('#header').addClass('js-bg');
 	} else {
 		jQuery('#header').removeClass('js-bg');

@@ -55,7 +55,7 @@
 					opacity: 1;
 				}
 			}
-			@include animation(profiles 3s);
+			@include animation(profiles 1.5s);
 		}
 
 		@include responsive(sp) {
